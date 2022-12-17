@@ -45,7 +45,7 @@ describe('test deployment', () => {
 
     const $ = cheerio.load(html);
 
-    expect($('.studentName').text()).toBe(studentName);
-    expect($('.studentId').text()).toBe(studentId);
+    expect($('studentName').text()).toBe(studentName);
+    expect($('studentId').text()).toBe(studentId);
   });
 });
