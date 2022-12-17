@@ -12,7 +12,7 @@ const AddPhoto = () => {
     e.preventDefault();
     if(secret=== "password"){
       try{
-        await fetch("http://localhost:3001/photos",{
+        await fetch("https://gallery-app-server.vercel.app/photos",{
       method: "POST",
       headers:{
         "Content-Type": "application/json",
